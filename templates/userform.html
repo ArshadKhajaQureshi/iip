@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div><b>User Form</b></div>
+    <div class="row">
+        <div >
+            <form method="post">
+                {% csrf_token %}
+
+                <label for="">Value1</label>
+                <input type="text" name="num1" value="{{n1}}" class="form-control">
+
+                <div >
+                    <label for="">Value2</label>
+                    <input type="text" name="num2" value="{{n2}} "class="form-control">
+                </div>
+                <div>
+                    <button type="submit">send</button>
+                </div>
+                
+                output
+                <input type="text" value="{{output}}">
+        
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
